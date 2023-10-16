@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vill Resturang</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url(hotell.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        h1{
+            font-size: 5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .overbilde{
+            width: 100vw;
+            height: 30vh;
+            margin: 15px;
+        }
+        .Navigasjon{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+        }
+        nav{
+            border: 5px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+        }
+    
+        .Navigasjon a{
+            font-size: 3rem;
+            padding: 1rem;
+            background-color: black;
+            color:rgb(255, 0, 0);
+            border: 1px solid white;
+            transition: 0.25s;         
+        }
+        .Navigasjon a:hover{
+            scale: 1.15;
+            grid-column: 400px;
+            transition: 0.1s;
+        }
+        .tekstogbilde{
+            display:grid;
+            grid-template-columns: repeat(3,30vw);
+            grid-template-rows: auto;
+            width: 90vw;
+            height: auto;
+            background-color: rgb(103, 209, 255);
+
+        }
+        .beskrivelse{
+            width: 30vw;
+            font-size: 2rem;
+            background-color: rgb(152, 152, 152);
+            
+        }
+        .hotellbilde{
+            width: 60vw;
+            height: 70vh;
+            
+            
+        }
+        main p{
+            text-align: left;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            background-color: rgba(0, 0, 0,0.5);
+            padding:50px;
+            width: 80vw;
+            height: 50vh;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="Navigasjon" style="align-self: flex-start;">
+            <a href="index.html">hjem</a>
+            <a href="rom.html">rom</a>
+            <a href="resturant.html">resturang</a>
+            <a href="om oss.html">om oss</a>
+            <a href="historie.html">historie</a>
+        </nav> 
+    <header>
+        
+        <div>
+        
+
+            <h1>
+                Vill Resturang!
+            </h1>
+        </div>
+        
+    </header>
+    <main>
+        <p>
+            Dette er vår resturang
+            Hotellet vårt tar stolthet i vår vilje 
+            til å gi våre kule rom til våre kunder 
+            fordi de er så kule, vi er også stolte 
+            av vår resturant fordi den har masse 
+            god mat av ulik kvalitet og mengde
+            og sånneting som slik og slak
+        </p>
+    </main>
+    
+</body>
+</html>

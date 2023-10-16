@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            background-image: url(hotell.jpg);
+            background-size: contain;
+            background-repeat: repeat;
+        }
+        .Navigasjon{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+        }
+        nav{
+            border: 5px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+        }
+    
+        .Navigasjon a{
+            font-size: 3rem;
+            padding: 1rem;
+            background-color: black;
+            color:rgb(255, 0, 0);
+            border: 1px solid white;
+            transition: 0.25s;         
+        }
+        .Navigasjon a:hover{
+            scale: 1.15;
+            grid-column: 400px;
+            transition: 0.1s;
+        }
+        .maten{
+            display: flex;
+            border:5px solid black;
+            width: 800px;
+            margin-bottom: 100px;
+            background-color: rgb(140, 140, 140);
+        }
+        img{
+            height: 300px;
+            width: 400px;
+        }
+        .beskrivelse{
+            display: flex;
+            border: 2px solid black;
+            height: 75px;
+            font-size: 35px;
+        }
+        .beskrivelse p:first-child{
+            font-weight: bold;
+        }
+        button{
+            height: 63px;
+            width: 400px;
+            background-color: rgb(242, 135, 135);
+            transition: 0.1s;
+        }
+        button:hover{
+            background-color: rgb(255, 72, 72)6);
+            transition: 0.1s;
+        }
+    </style>
+</head>
+<body>
+    <nav class="Navigasjon">
+        <a href="index.html">hjem</a>
+        <a href="rom.html">rom</a>
+        <a href="resturant.html">resturang</a>
+        <a href="om oss.html">om oss</a>
+        <a href="historie.html">historie</a>
+    </nav>
+    <h1>Resturant:</h1>
+    <div class="maten">
+        <div class="oppdeling1">
+            <img src="NACHOS.jpg" alt="NACHOS">
+        </div>
+        <div class="oppdeling2">
+            <div class="beskrivelse">
+                <p>ingredienser:</p>
+                <p>tacochips, kjøtt, saus</p>
+            </div>
+            <div class="beskrivelse">
+                <p>pris:</p>
+                <p>155kr</p>
+            </div>
+            <div class="beskrivelse">
+                <p></p>
+                <p> deilige deilige tachos</p>
+            </div>
+            <button>
+                BESTILL HOTELLROM
+            </button>
+        </div>
+    </div>
+    <div class="maten">
+        <div class="oppdeling1">
+            <img src="Pizza.jpg" alt="NACHOS">
+        </div>
+        <div class="oppdeling2">
+            <div class="beskrivelse">
+                <p>ingredienser:</p>
+                <p>Pizzadeig, ost, kjøtt</p>
+            </div>
+            <div class="beskrivelse">
+                <p>pris:</p>
+                <p>180kr</p>
+            </div>
+            <div class="beskrivelse">
+                <p></p>
+                <p> Ovnstekt pizza</p>
+            </div>
+            <button>
+                BESTILL HOTELLROM
+            </button>
+        </div>
+    </div>
+    
+    <div class="maten">
+        <div class="oppdeling1">
+            <img src="Gravlaks.jpg" alt="NACHOS">
+        </div>
+        <div class="oppdeling2">
+            <div class="beskrivelse">
+                <p>ingredienser:</p>
+                <p>fisk</p>
+            </div>
+            <div class="beskrivelse">
+                <p>pris:</p>
+                <p>250kr</p>
+            </div>
+            <div class="beskrivelse">
+                <p></p>
+                <p> Gravlaks</p>
+            </div>
+            <button>
+                BESTILL HOTELLROM
+            </button>
+        </div>
+    </div>
+    <div class="maten">
+        <div class="oppdeling1">
+            <img src="Spare ribs.jpg" alt="NACHOS">
+        </div>
+        <div class="oppdeling2">
+            <div class="beskrivelse">
+                <p>ingredienser:</p>
+                <p>Spare ribs</p>
+            </div>
+            <div class="beskrivelse">
+                <p>pris:</p>
+                <p>299kr</p>
+            </div>
+            <div class="beskrivelse">
+                <p></p>
+                <p> Servert med bbq saus</p>
+            </div>
+            <button>
+                BESTILL HOTELLROM
+            </button>
+        </div>
+    </div>
+</body>
+</html>

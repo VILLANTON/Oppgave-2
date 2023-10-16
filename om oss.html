@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            background-image: url(hotell.jpg);
+            background-size: contain;
+            background-repeat: repeat;
+        }
+        .Navigasjon{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+        }
+        nav{
+            border: 5px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+        }
+    
+        .Navigasjon a{
+            font-size: 3rem;
+            padding: 1rem;
+            background-color: black;
+            color:rgb(255, 0, 0);
+            border: 1px solid white;
+            transition: 0.25s;         
+        }
+        .Navigasjon a:hover{
+            scale: 1.15;
+            grid-column: 400px;
+            transition: 0.1s;
+        }
+        p{
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:20px
+    }
+    </style>
+</head>
+<body>
+    <nav class="Navigasjon">
+        <a href="index.html">hjem</a>
+        <a href="rom.html">rom</a>
+        <a href="resturant.html">resturang</a>
+        <a href="om oss.html">om oss</a>
+        <a href="historie.html">historie</a>
+    </nav>
+    <p>
+        Vi er et fint lite hotell som lager god mat. Ganske villt spør du meg.
+    </p>
+</body>
+</html>
